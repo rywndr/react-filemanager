@@ -82,4 +82,4 @@ Finally, the `updateFileList` function is called, passing the `sortedFiles` arra
 
 By implementing these search and sort features, the Multimedia Web App becomes more user-friendly and efficient. Users can easily search for specific files and they can sort the files by file type or size to quickly find what they're looking for. These features enhance the overall user experience and provide better organization and accessibility of multimedia files within the app.
 
-take a look at the [demo]([url](https://roy01-multimedia-app-extended.web.app/)https://roy01-multimedia-app-extended.web.app/)
+take a look at the demo[demo](https://roy01-multimedia-app-extended.web.app/)
