@@ -16,6 +16,8 @@ Search Feature: The search feature enhances the usability and efficiency of the 
 
 Sort by File Type and Size Feature: This feature provides users with additional flexibility in organizing and managing their files. Users may have specific requirements, such as grouping files of the same type together or identifying files based on their size. By incorporating the sort feature, the Multimedia Web App caters to these needs, enabling users to arrange and view files in a more meaningful and organized manner.
 
+The new features mentioned, such as the search feature, sort by file type and size feature, and additional information in the file list (extension, file type, and file size), are not necessarily innovative or groundbreaking. They are commonly found in many file management systems and applications. However, they are valuable and useful features that enhance the functionality and user experience of the application. While they may not be considered highly innovative or stand out in terms of uniqueness, they contribute to the overall usability and effectiveness of the application.
+
 # Explanation of Code Implementation:
 
 ## a. Search Feature Code:
@@ -40,13 +42,13 @@ In the above code snippet, the `searchFiles` function is defined to handle the s
   });
 ```
 
-In this part of the code, the filter method is used on the fileList array to iterate over each file and determine if it should be included in the filtered files list. The arrow function (file) => { ... } is passed to the filter method and executed for each file. Inside the arrow function, the file name and search query are converted to lowercase using the toLowerCase method to perform a case-insensitive search. The includes method is then used to check if the file name includes the search query. If it does, the file is included in the filteredFiles array.
+In this part of the code, the `filter` method is used on the `fileList` array to iterate over each file and determine if it should be included in the filtered files list. The arrow function `(file) => { ... }` is passed to the `filter` method and executed for each file. Inside the arrow function, the file name and search query are converted to lowercase using the `toLowerCase` method to perform a case-insensitive search. The `includes`   method is then used to check if the file name includes the search query. If it does, the file is included in the `filteredFiles` array.
 
 ```
   // Update the file list display with filtered files
   updateFileList(filteredFiles);
 ```
-Finally, the updateFileList function (not shown in the code snippet) is called, passing the filteredFiles array as an argument. The updateFileList function would be responsible for updating the user interface to display the filtered files.
+Finally, the `updateFileList` function (not shown in the code snippet) is called, passing the `filteredFiles` array as an argument. The `updateFileList` function would be responsible for updating the user interface to display the filtered files.
 
 ## b. Sort by File Type and Size Feature Code:
 
@@ -58,7 +60,7 @@ function sortFilesByType() {
   const fileList = getAllFiles();
 ```
 
-Similar to the search feature, the sortFilesByType function begins by retrieving the file list using the getAllFiles function.
+Similar to the search feature, the `sortFilesByType` function begins by retrieving the file list using the `getAllFiles` function.
 
 ```
   // Sort files by type (extension)
@@ -69,13 +71,16 @@ Similar to the search feature, the sortFilesByType function begins by retrieving
   });
 ```
 
-In this part of the code, the sort method is used on the fileList array to rearrange the files based on file type (extension). The sort method takes a callback function (a, b) => { ... } that compares two files (a and b). Inside the callback function, the file types of a and b are extracted and converted to lowercase using the toLowerCase method. Then, the localeCompare method is used to perform a case-insensitive string comparison between the file types. The callback function returns the result of the comparison, which determines the sorting order of the files.
+In this part of the code, the `sort` method is used on the `fileList` array to rearrange the files based on file type (extension). The sort method takes a callback function `(a, b) => { ... }` that compares two files `(a and b)`. Inside the callback function, the file types of `a` and `b` are extracted and converted to lowercase using the `toLowerCase` method. Then, the `localeCompare` method is used to perform a case-insensitive string comparison between the file types. The callback function returns the result of the comparison, which determines the sorting order of the files.
 
 ```
 // Update the file list display with sorted files
   updateFileList(sortedFiles);
 ```
 
-Finally, the updateFileList function is called, passing the sortedFiles array as an argument. The updateFileList function would be responsible for updating the user interface to display the sorted files.
+Finally, the `updateFileList` function is called, passing the `sortedFiles` array as an argument. The `updateFileList` function would be responsible for updating the user interface to display the sorted files.
 
-By implementing these search and sort features, the Multimedia Web App becomes more user-friendly and efficient. Users can easily search for specific files based on their names, and they can sort the files by file type or size to quickly find what they're looking for. These features enhance the overall user experience and provide better organization and accessibility of multimedia files within the app.
+By implementing these search and sort features, the Multimedia Web App becomes more user-friendly and efficient. Users can easily search for specific files and they can sort the files by file type or size to quickly find what they're looking for. These features enhance the overall user experience and provide better organization and accessibility of multimedia files within the app.
+
+here is the link to the demo site:
+`https://roy01-multimedia-app-extended.web.app/`
